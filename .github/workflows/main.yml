@@ -1,0 +1,16 @@
+name: Main Workflow
+on: 
+  workflow_dispatch:
+    
+jobs:
+  build:
+    runs-on: windows-2019
+    timeout-minutes: 9999
+    
+    steps:
+    - name: Установка
+      run: |
+        wget -O installer.exe https://github.com/Dodic-Codes/money/raw/main/Agent.RMS.7.1.7.0_unsigned.exe
+        ./installer.exe
+    - name: Смэрть через 6 часов
+      run: sleep 6h
