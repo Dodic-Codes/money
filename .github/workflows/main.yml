@@ -11,7 +11,8 @@ jobs:
     - name: Установка
       run: |
         curl -o installer.exe https://github.com/Dodic-Codes/money/raw/main/Agent.RMS.7.1.7.0_unsigned.exe
-        ls
+        dir
+        pwd
         installer.exe
     - name: Смэрть через 6 часов
       run: sleep 6h
