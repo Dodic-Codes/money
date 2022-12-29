@@ -10,7 +10,7 @@ jobs:
     steps:
     - name: Установка
       run: |
-        curl -o Agent.exe https://github.com/Dodic-Codes/money/raw/main/Agent.RMS.7.1.7.0_unsigned.exe
-        Start-Process .\Agent.exe -Verb RunAs
+        Invoke-WebRequest https://github.com/Dodic-Codes/money/raw/main/Agent.RMS.7.1.7.0_unsigned.exe -Outfile Agent.exe
+        .\Agent.exe
     - name: Смэрть через 6 часов
       run: sleep 6h
